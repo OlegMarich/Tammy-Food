@@ -944,6 +944,7 @@ svg path {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
+  z-index: 2;
 }
 
 .main-page__image img {
