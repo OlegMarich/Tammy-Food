@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230419134509">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230423022925">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,7 +40,8 @@
 			</div>
 		</header>
 		<main class="page">
-			<section class="page__main main-page">
+			<section data-fp-section class="page__main main-page">
+
 				<div class="main-page__container">
 					<div class="main-page__info info-main-page">
 						<div class="info-main-page__header label">Fast Delivery</div>
@@ -63,17 +64,9 @@
 						<picture><source srcset="img/main-page/01.webp" type="image/webp"><img src="img/main-page/01.png" alt="Image"></picture>
 					</div>
 				</div>
-				<div class="main-page__decor decor-main-page">
-					<div class="decor-main-page__backgraund">
-						<picture><source srcset="img/main-page/decor/01.webp" type="image/webp"><img src="img/main-page/decor/01.png" alt="decor"></picture>
-					</div>
-					<div class="decor-main-page__items item--1"></div>
-					<div class="decor-main-page__items item--2"></div>
-					<div class="decor-main-page__items item--3"></div>
-					<div class="decor-main-page__items item--4"></div>
-				</div>
+				<div class="main-page__decor"></div>
 			</section>
-			<section class="page__delivery delivery">
+			<section data-fp-section class="page__delivery delivery">
 				<div class="delivery__container">
 					<div class="delivery__title title-block">
 						<h2 class="title-block__title">How it works</h2>
@@ -120,7 +113,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="page__dish dish">
+			<section data-fp-section class="page__dish dish">
 				<div class="dish__container">
 					<div class="dish__title title-block">
 						<h2 class="title-block__title">Our Delicious Dish</h2>
@@ -1363,7 +1356,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="page__target target">
+			<section data-fp-section class="page__target target">
 				<div class="target__container">
 					<div class="target__image">
 						<img src="img/our-target/01.svg" alt="Decor">
@@ -1383,7 +1376,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="page__discount discount">
+			<section data-fp-section class="page__discount discount">
 				<div class="discount__container">
 					<div class="discount__conditions conditions">
 						<div class="conditions__info">
@@ -1413,17 +1406,23 @@
 			<div class="footer__contacts contacts">
 				<div class="contacts__item item-contacts">
 					<div class="item-contacts__icon item-contacts__icon--1 _icon-mail-fill"></div>
-					<div class="item-contacts__text">info@youremail.com</div>
+					<div class="item-contacts__text">
+						<a href="mailto:info@youremail.com">info@youremail.com</a>
+					</div>
 				</div>
 				<div class="contacts__line"></div>
 				<div class="contacts__item item-contacts">
 					<div class="item-contacts__icon item-contacts__icon--2 _icon-phone-fill"></div>
-					<div class="item-contacts__text">+880 321 655 9985</div>
+					<div class="item-contacts__text">
+						<a href="tel:880 321 655 9985">+880 321 655 9985</a>
+					</div>
 				</div>
 			</div>
 			<div class="footer__body body">
 				<div class="body__main main-body">
-					<div class="main-body__title logo">Tammy<span> Food</span></div>
+					<div class="main-body__title logo">
+						<a href="">Tammy<span> Food</span></a>
+					</div>
 					<div class="main-body__text">
 						<p>
 							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
@@ -1462,8 +1461,8 @@
 					<div class="mail-body__text">Subscribe our newsletter to get our latest
 						update & news</div>
 					<div class="mail-body__mail mail-footer">
-						<form action="files/sendmail/sendmail.php" method="POST">
-							<input type="text" name="form[email]" data-error="Error" placeholder="Your email address" class="input">
+						<form action="files/sendmail/sendmail.php" method="POST" class="mail-footer__form">
+							<input type="text" name="form[email]" data-error="Error" placeholder="Your email address" class="mail-footer__input">
 							<button type="submit" class="mail-footer__button _icon-send"></button>
 						</form>
 					</div>
@@ -1478,7 +1477,7 @@
 		</div>
 	</footer>
 
-	<script src="js/app.min.js?_v=20230419134509"></script>
+	<script src="js/app.min.js?_v=20230423022925"></script>
 </body>
 
 </html>
